@@ -1,0 +1,114 @@
+INTRODUÇÃO AO CURSO DE HTML
+
+O HTML foi criado em 1991 por Tim Berners-Lee
+Tudo dentro de um arquivo HtML é um elemento
+
+Estrutura Básica
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta>
+  <title></title>
+ </head>
+ <body>
+ </body>
+</html>
+
+ENTENDENDO SEMÂNTICA
+
+<section>       <aside>
+
+<header>        <footer>
+
+<article>       <h1>~<h6>
+
+COMO USAR TEXTOS E LINKS EM HTML
+
+<h1>Título da página</h1>
+
+<h2>Título de seção</h2>
+
+<h3>Título de artigo</h3>
+
+<p>Conteúdo do artigo</p>
+
+<a>Link</a>
+
+<a href="linkedin.com/in/mateusmedeir">Linkedin</a>
+<a href="mateusmlopestr@gmail.com">E-mail</a>
+<a target="_blank">Link</a>
+
+COMO INSERIR IMAGENS EM SEU SITE
+
+<img>
+
+<img src="img/avatar.jpg">
+
+<img alt="Foto de Mateus Lopes">
+
+COMO ORGANIZAR LISTAS COM HTML
+
+<ul>
+Item 1
+Item 2
+
+<ol>
+1. Item 1
+2. Item 3
+
+<li>
+
+INTRODUÇÃO E CONCEITOS BÁSICOS DO CSS3
+
+                         ID X CLASS
+                            |
+<header id="header">        | <header class="header">
+</header>                   | </header>
+                            |
+                            |                         
+#header {                   | .header {
+  padding: 10px;            |   padding: 15px;
+}                           | }
+
+Obs: ID so pode ser usado uma vez na pagina
+
+Box Model (de fora para dentro)
+
+margin, border, padding, content
+
+ESTILIZANDO ELEMENTOS, TEXTOS E LISTAS
+
+.post {
+  padding: 15px(para o topo) 10px(para a direita) 5px(para a parte inferior) 0(para a esquerda)
+
+Border
+
+Styles: solid, dotted, dashed...
+
+Border-radius
+
+border-radius: 10px;
+border-radius: 50%;
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%;
+
+font-weight
+
+font-weight: normal;
+font-weight: bold;
+
+text-transform
+
+text-transform: uppercase; (tudo maiusculo)
+text-transform: lowercase; (tudo minusculo)
+text-transform: capitalize; (primeiras letras de cada palavra em maiusculo)
+
+text-decoration
+
+text-decoration: underline; (linha abaixo)
+text-decoration: overline; (linha acima)
+text-decoration: line-trough; (linha ao centro)
+
+DIMENSÃO E ALINHAMENTO
+
