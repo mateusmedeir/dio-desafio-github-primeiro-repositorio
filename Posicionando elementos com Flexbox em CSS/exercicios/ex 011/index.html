@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Flex</title>
+  <style>
+    .flex-container{
+      display: flex;
+      border: 1px solid black;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+    .item{
+      background-color:brown;
+      color:white;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+    .flex-1{
+      flex: 1;
+      /*grow=1, shrink=1, basis=0*/
+    }
+    .largura{
+      width: 200px;
+    }
+    .largura-min{
+      min-width:200px;
+    }
+    .flex-2{
+      flex: 2;
+      /*grow=2, shrink=1, basis=0*/
+    }
+  </style>
+</head>
+<body>
+  <h3>flex: 1</h3>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">BBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">BBBBBBBBBBBBBBBBBBBBBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <h3>flex: mix (1, 2, 2, 1, 1)</h3>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <div class="flex-container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">BBBBBBBBBBBBBBBBBBBBBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+  <h3>width ignorado (flex: 1, width em itens: 200px)</h3>
+  <div class="flex-container">
+    <div class="item flex-1 largura">A</div>
+    <div class="item flex-1 largura">BBB</div>
+    <div class="item flex-1 largura">CC</div>
+    <div class="item flex-1 largura">D</div>
+    <div class="item flex-1 largura">EF</div>
+  </div>
+  <div class="flex-container">
+    <div class="item flex-1 largura">A</div>
+    <div class="item flex-1 largura">BBBBBBBBBBBBBBBBBBBBBB</div>
+    <div class="item flex-1 largura">CC</div>
+    <div class="item flex-1 largura">D</div>
+    <div class="item flex-1 largura">EF</div>
+  </div>
+  <h3>min-width: 250px</h3>
+  <div class="flex-container">
+    <div class="item flex-1 largura-min">A</div>
+    <div class="item flex-1 largura-min">BBB</div>
+    <div class="item flex-1 largura-min">CC</div>
+    <div class="item flex-1 largura-min">D</div>
+    <div class="item flex-1 largura-min">EF</div>
+  </div>
+</body>
+</html>
